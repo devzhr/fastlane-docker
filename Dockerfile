@@ -42,7 +42,7 @@ COPY --from=itms_transporter /itms /itms
 RUN chown -R builder:builder /itms
 
 RUN gem install fastlane -NV
-
+RUN gem install cocoapods
 ENV FASTLANE_ITUNES_TRANSPORTER_PATH=/itms
 ENV FASTLANE_ITUNES_TRANSPORTER_USE_SHELL_SCRIPT=1
 
